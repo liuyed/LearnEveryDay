@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+        <p data-name="二狗子" data-age="22"></p>
+    </div>
+    <script>
+        // querySelector
+        let item = document.querySelector('.item');
+        console.log(item);
+
+        // querySelectorAll
+        let items = document.querySelectorAll('.item');
+        console.log(items); //类数组
+
+        // closest
+
+        document.querySelector('li').closest('ul');
+
+        // dataset
+        document.querySelector('p').dataset
+        // {name:'二狗子',age:22}
+
+    </script>
+</body>
+</html>
